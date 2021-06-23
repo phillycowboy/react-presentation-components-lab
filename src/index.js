@@ -4,13 +4,13 @@ import ReactDOM from 'react-dom';
 import SimpleComponent from './components/SimpleComponent';
 import SimplerComponent from './components/SimplerComponent';
 
-handleOtherClick = () => {
-  alert("AHHHHHH!")
-}
+// handleOtherClick = () => {
+//   alert("AHHHHHH!")
+// }
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={this.handleOtherClick} />
+    <SimplerComponent handleClick={() => alert("ahhhhh!")} />
   </div>,
   document.getElementById('root')
   );
